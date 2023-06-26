@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+p {
+    color: white;
+    margin-bottom: 10px;
+}
+
+form {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+h6 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.name input,
+.age input {
+    padding: 25px;
+    font-size: 18px;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: solid 3px lightgray;
+    background: white;
+    outline: none;
+}
+
+
+.click button {
+    margin-top: 20px;
+    cursor: pointer;
+    color: white;
+    width: 155px;
+    height: 55px;
+    background-color: #06406fa4;
+    border-radius: 8px;
+    transition: transform 200ms, box-shadow 200ms;
+}
+
+.click button:active {
+    transform: translateY(4px) translateX(4px);
+    box-shadow: #094c66 0px 0px 0px;
+}
+
+.elem {
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    border: 3px solid grey;
+}
+
+.big {
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    color: blue;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.blue {
+    width: 330px;
+    font-size: 20px;
+    height: 50px;
+    color: white;
+    background: blue;
+    margin-bottom: 20px;
+}
+
+.form input {
+    width: 100px;
+    height: 10px;
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    flex-wrap: wrap;
+    right: 0;
+    top: 0;
+    background-color: black;
+    width: 475px;
+    height: 100%;
+    animation-name: modal;
+    transition: .5s ease;
+    opacity: 1;
+    animation-duration: 0.5 ease;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    width: 330px;
+    flex-wrap: wrap;
+}
+
+.form input,
+.prices input {
+    color: green;
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 330px;
+    padding-left: 20px;
+    height: 50px;
+}
+
+.box {
+    display: none;
+}
+
+.back {
+    margin-top: -230px;
+    width: 330px;
+    border: 2px solid white;
+    font-size: 20px;
+    margin-right: -75px;
+    margin-left: 75px;
+    height: 50px;
+    color: white;
+    background: rgba(139, 69, 19, 0);
+}
+
+
+
+@keyframes modal {
+    from {
+        right: -600px;
+        opacity: 1
+    }
+
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
